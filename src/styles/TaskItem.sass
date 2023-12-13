@@ -1,0 +1,158 @@
+$bg: #222222
+	
+.task
+	gap: 15px
+	justify-content: space-between
+	height: max-content
+	align-items: center
+	overflow: visible
+	position: relative
+	animation: appear 1 .4s
+	display: flex
+	width: 90%
+	padding: 10px
+	background: linear-gradient(45deg, $bg, $bg)
+	border-radius: 6px
+	color: white
+	transition: .1s
+
+.description
+	padding-bottom: 8px
+	font-weight: 100
+
+.task:hover .complete
+	background-color: #383838
+
+.main 
+	flex-grow: 1
+	display: flex
+	flex-direction: column
+	gap: 10px
+	padding-top: 8px
+
+.menu
+	width: 10%
+	padding: 8px
+	display: flex
+	flex-direction: column
+
+.title
+	font-size: 17px
+
+.taskButton
+	text-transform: capitalize
+	color: white
+	border: none
+	background-color: $bg
+	transition: .1s
+	cursor: pointer
+	font-size: 15px
+	padding: 4px 10px
+
+.menuButton
+	animation: menuAppear .1s 1
+	transition: .1s
+	background-color: #121212
+	padding: 10px
+	border-radius: 5px
+	transition: .1s
+	
+
+.taskButton:hover, .menuButton:hover
+	background-color: #7b7b7b
+
+.menuIcon
+	cursor: pointer
+	width: 30px
+	height: 30px
+
+.complete
+	border-radius: 5px
+	background-color: $bg
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px white solid
+	cursor: pointer
+	width: 30px
+	height: 30px
+	transition: .1s
+
+.tick
+	width: 80%
+	height: 80%
+
+.setDescButtons
+	z-index: 6
+	display: flex
+	gap: 20px
+
+.setDescription
+	cursor: pointer
+	border: none
+	height: fit-content
+	padding: 10px 16px
+	color: white
+	background-color: #1a722f
+
+.cancelDescription
+	cursor: pointer
+	border: none
+	padding: 10px 16px
+	height: fit-content
+	color: white
+	background-color: #a02626
+
+.setDescription:hover, .cancelDescription:hover
+	filter: brightness(1.1)
+
+.descriptionInput
+	width: 80%
+
+.head
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 5%
+	gap: 5px
+
+.number
+	height: fit-content
+	aspect-ratio: 1
+	font-weight: 100
+	border: 1px white solid
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	border-bottom: none
+
+.statusDot
+	width: 5px
+	height: 5px
+	border-radius: 50%
+
+.statusTitle
+	font-size: 11px
+	font-weight: 100
+
+.status
+	display: flex
+	gap: 5px
+	align-items: center
+
+@keyframes appear
+	0% 
+		transform: translateY(-40px)
+	100%
+		transform: translateY(0px)
+		
+
+@keyframes menuAppear
+	0%
+		transform: translateX(30px)
+		opacity: 0
+	100%
+		transform: translateX(0px)
+		opacity: 1

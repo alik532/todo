@@ -1,0 +1,78 @@
+$bg: #222222
+	
+:root
+	overflow: hidden
+
+.app
+	height: 100vh
+	background: linear-gradient(40deg, #244456, #1e587a, #548fb1, #70c2b2)
+	width: 100%
+	display: flex
+	flex-direction: row
+
+.content
+	margin-top: 1%
+	margin-left: 3%
+	display: flex
+	flex-direction: column
+	gap: 20px
+	width: 100%
+
+.addTask
+	width: 73%
+	fill: $bg
+	right: 8%
+	border-radius: 5px
+	position: absolute
+	bottom: 5%
+	background-color: $bg
+	display: flex
+	justify-content: space-between
+
+input
+	width: 100%
+	padding: 8px 6px
+	border: none
+	color: white
+	background-color: $bg
+	outline: none
+
+.addTaskButton
+	font-size: 20px
+	color: white
+	padding: 8px 15px
+	background: $bg
+	border: none
+	transition: .1s
+
+.addTaskButton:not(:disabled):hover
+	cursor: pointer
+	background-color: #7b7b7b
+
+.tasklist
+	flex-grow: 1
+	width: 100%
+	overflow-y: scroll
+	overflow-x: visible
+	max-height: 80vh
+	display: flex
+	flex-direction: column
+	gap: 10px
+
+.filter
+	cursor: pointer
+	text-transform: capitalize
+	font-size: 16px
+	width: 230px
+	padding: 10px
+	background-color: $bg
+	color: white
+	border: none
+	border-radius: 5px
+
+@media (orientation: portrait)
+	.tasklist
+		margin-left: 10%
+
+	.sidebar
+		display: none

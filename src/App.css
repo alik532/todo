@@ -1,0 +1,36 @@
+:root {
+  height: 100%;
+  background: linear-gradient(40deg, #172d3a, #1c506f, #548fb1, #70c2b2);
+}
+
+.addTask {
+  fill: #222222;
+  border-radius: 5px;
+}
+
+.input {
+  padding: 8px 3px;
+  border: none;
+  color: white;
+  background-color: #222222;
+}
+
+.input::-moz-placeholder {
+  color: white;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.input::-moz-selection {
+  border: none;
+}
+
+.input::selection {
+  border: none;
+}
+
+.input:focus {
+  border: none;
+}/*# sourceMappingURL=App.css.map */

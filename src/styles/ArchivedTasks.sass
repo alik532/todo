@@ -1,0 +1,45 @@
+.modal
+	z-index: 2
+	background-color: #000000a1
+	backdrop-filter: blur(4px)
+	align-items: center
+	justify-content: center
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+
+.modalTitle
+	color: white
+
+.modalContent
+	display: flex
+	flex-direction: column
+	width: 60%
+	height: auto
+	max-height: 80vh
+	padding: 20px
+	background-color: #1e587a
+
+.modalHead
+	display: flex
+	justify-content: space-between
+
+.archivedTaskList
+	overflow-y: scroll
+	display: flex
+	flex-direction: column
+	gap: 20px
+
+.closeModal
+	cursor: pointer
+	background-color: #222222
+	padding: 10px
+	border: none
+	border-radius: 5px
+	color: white
+	transition: .2s
+
+.closeModal:hover
+	background-color: #595959
